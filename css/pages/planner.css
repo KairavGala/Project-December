@@ -1,0 +1,467 @@
+.planner-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Day Row & Header styling */
+.planner-day-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  flex-wrap: wrap;
+}
+
+.planner-day-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.planner-day-badge {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+}
+
+.planner-day-text {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.planner-day-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.planner-input-label {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.planner-start-input {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 4px var(--space-2);
+  color: var(--text-primary);
+  font-size: var(--text-xs);
+  font-family: var(--font-sans);
+}
+
+/* Accountability Backlog Card */
+.planner-backlog-wrapper {
+  margin-top: var(--space-6);
+}
+
+.backlog-card {
+  background: rgba(220, 53, 69, 0.04);
+  border: 1px solid var(--status-red);
+  border-radius: var(--radius-xl);
+  padding: var(--space-5);
+  animation: card-enter 300ms ease both;
+}
+
+.backlog-header {
+  margin-bottom: var(--space-4);
+}
+
+.backlog-title {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--status-red);
+  margin: 0;
+}
+
+.backlog-subtitle {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  margin: 4px 0 0;
+  line-height: 1.4;
+}
+
+.backlog-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.backlog-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-4);
+  flex-wrap: wrap;
+}
+
+.backlog-item-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.backlog-subj-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-bottom: var(--space-1);
+}
+
+.backlog-subj-badge.subj-chemistry {
+  background: rgba(var(--subj-chem-rgb, 79, 110, 242), 0.12);
+  color: var(--status-blue);
+}
+
+.backlog-subj-badge.subj-physics {
+  background: rgba(var(--subj-phys-rgb, 235, 94, 40), 0.12);
+  color: var(--status-yellow);
+}
+
+.backlog-subj-badge.subj-mathematics {
+  background: rgba(var(--subj-math-rgb, 64, 165, 120), 0.12);
+  color: var(--status-green);
+}
+
+.backlog-chap-name {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.backlog-task-name {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.backlog-reason {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  margin-top: 2px;
+}
+
+/* Tabs Bar */
+.planner-tabs-bar {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: var(--space-2);
+}
+
+.planner-tab-btn {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-tertiary);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.planner-tab-btn:hover {
+  color: var(--text-primary);
+}
+
+.planner-tab-btn.is-active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Content Area */
+.planner-content-area {
+  margin-top: var(--space-5);
+}
+
+.planner-today-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.today-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.section-header-text {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin: 0 0 var(--space-1) 0;
+}
+
+/* Mission cards bento */
+.mission-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+  animation: card-enter 300ms ease both;
+}
+
+.mission-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.mission-card.is-done {
+  border-color: var(--border-subtle);
+  opacity: 0.65;
+  background: var(--bg-primary);
+  transform: none;
+  box-shadow: none;
+}
+
+.mission-card-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+}
+
+.mission-subj-badge {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.mission-subj-badge.subj-chemistry {
+  background: rgba(79, 110, 242, 0.12);
+  color: #4f6ef2;
+}
+
+.mission-subj-badge.subj-physics {
+  background: rgba(235, 94, 4 orange, 0.12);
+  color: var(--status-yellow);
+}
+
+.mission-subj-badge.subj-mathematics {
+  background: rgba(64, 165, 120, 0.12);
+  color: var(--status-green);
+}
+
+.mission-card-reason {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+}
+
+.mission-card-chapter {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.mission-card-task {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin: 4px 0 0;
+  font-weight: 500;
+}
+
+.mission-card-footer {
+  margin-top: var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-3);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mission-checked-indicator {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--status-green);
+  text-align: right;
+  margin-top: var(--space-3);
+}
+
+/* Action button inside cards */
+.mission-action-button {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.resource-complete-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
+.resource-complete-btn:hover {
+  background: var(--accent-hover, #405cd0);
+}
+
+.revision-complete-btn {
+  background: var(--accent-muted);
+  color: var(--accent);
+  border: none;
+}
+
+.revision-complete-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.action-btn-quiet {
+  background: transparent;
+  border: 1px solid var(--border-default);
+  color: var(--text-secondary);
+}
+
+.action-btn-quiet:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+/* Roadmap timeline */
+.roadmap-header {
+  margin-bottom: var(--space-5);
+}
+
+.roadmap-title {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.roadmap-desc {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  margin: 4px 0 0;
+  line-height: 1.4;
+}
+
+.roadmap-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.roadmap-day-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  animation: card-enter 300ms ease both;
+}
+
+.roadmap-day-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.roadmap-day-title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.roadmap-day-date {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.roadmap-day-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.roadmap-task-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-1) 0;
+}
+
+.roadmap-task-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.roadmap-task-subj-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.roadmap-task-subj-dot.subj-chemistry {
+  background: #4f6ef2;
+}
+
+.roadmap-task-subj-dot.subj-physics {
+  background: var(--status-yellow);
+}
+
+.roadmap-task-subj-dot.subj-mathematics {
+  background: var(--status-green);
+}
+
+.roadmap-task-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.roadmap-task-main {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.roadmap-task-reason {
+  font-size: 10px;
+  color: var(--text-tertiary);
+}
+
+.roadmap-task-empty {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  font-style: italic;
+  padding: var(--space-2) 0;
+}

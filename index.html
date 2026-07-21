@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project December</title>
+
+<link rel="stylesheet" href="css/utilities/reset.css" />
+<link rel="stylesheet" href="css/utilities/variables.css" />
+<link rel="stylesheet" href="css/themes/dark.css" />
+<link rel="stylesheet" href="css/themes/light.css" />
+<link rel="stylesheet" href="css/components/layout.css" />
+<link rel="stylesheet" href="css/components/navigation.css" />
+<link rel="stylesheet" href="css/components/chapterCard.css" />
+<link rel="stylesheet" href="css/components/resourceList.css" />
+<link rel="stylesheet" href="css/components/trackerToolbar.css" />
+<link rel="stylesheet" href="css/components/aiChatSidebar.css" />
+<link rel="stylesheet" href="css/pages/dashboard.css" />
+<link rel="stylesheet" href="css/pages/tracker.css" />
+<link rel="stylesheet" href="css/pages/placeholder.css" />
+<link rel="stylesheet" href="css/pages/planner.css" />
+<link rel="stylesheet" href="css/pages/phase5.css" />
+<link rel="stylesheet" href="css/pages/workspace.css" />
+<link rel="stylesheet" href="css/pages/analytics.css" />
+<link rel="stylesheet" href="css/pages/focus.css" />
+<link rel="stylesheet" href="css/pages/settings.css" />
+<link rel="stylesheet" href="css/animations/transitions.css" />
+</head>
+<body>
+<div id="app-shell" class="app-shell">
+  <div id="sidebar-slot"></div>
+  <main id="main-slot" class="main-content"></main>
+</div>
+
+<!-- Classic scripts, loaded in dependency order. Not type="module" —
+     ES modules are blocked by CORS when opened via file://, and this app
+     has to run by double-clicking index.html, no server. -->
+<script type="module" src="js/utils/dom.js"></script>
+<script type="module" src="js/state/chapterState.js"></script>
+<script type="module" src="js/store.js"></script>
+<script type="module" src="js/services/revision.js"></script>
+<script type="module" src="js/services/progress.js"></script>
+<script type="module" src="js/services/health.js"></script>
+<script type="module" src="js/services/dashboard.js"></script>
+<script type="module" src="js/services/julySchedule.js"></script>
+<script type="module" src="js/services/planner.js"></script>
+<script type="module" src="js/services/errorNotebook.js"></script>
+<script type="module" src="js/services/studySession.js"></script>
+<script type="module" src="js/services/weeklyPlanner.js"></script>
+<script type="module" src="js/services/shortcuts.js"></script>
+<script type="module" src="js/services/analytics.js"></script>
+<script type="module" src="js/services/focus.js"></script>
+<script type="module" src="js/components/navigation.js"></script>
+<script type="module" src="js/components/resourceList.js"></script>
+<script type="module" src="js/components/chapterCard.js"></script>
+<script type="module" src="js/components/trackerToolbar.js"></script>
+<script type="module" src="js/components/aiChatSidebar.js"></script>
+<script type="module" src="js/components/studyConsistencyChart.jsx"></script>
+<script type="module" src="js/pages/dashboard.js"></script>
+<script type="module" src="js/pages/tracker.js"></script>
+<script type="module" src="js/pages/planner.js"></script>
+<script type="module" src="js/pages/dailyMission.js"></script>
+<script type="module" src="js/pages/weeklyPlanner.js"></script>
+<script type="module" src="js/pages/sundayReview.js"></script>
+<script type="module" src="js/pages/errorNotebook.js"></script>
+<script type="module" src="js/pages/revisionCalendar.js"></script>
+<script type="module" src="js/pages/workspace.js"></script>
+<script type="module" src="js/pages/analytics.js"></script>
+<script type="module" src="js/pages/focus.js"></script>
+<script type="module" src="js/pages/settings.js"></script>
+<script type="module" src="js/pages/placeholder.js"></script>
+<script type="module" src="js/router.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

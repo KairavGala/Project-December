@@ -1,0 +1,6 @@
+{
+  "name": "JEE Study Companion",
+  "description": "An interactive study companion and progress tracker for Joint Entrance Examination (JEE) preparation, covering Physics, Chemistry, and Mathematics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

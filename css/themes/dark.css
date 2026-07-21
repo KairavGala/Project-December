@@ -1,0 +1,16 @@
+html[data-theme="dark"] {
+  --bg-primary: #0e0f12;
+  --bg-secondary: #16171c;
+  --bg-elevated: #1c1d24;
+  --bg-hover: #232430;
+  --border-subtle: #24252d;
+  --border-default: #2e2f38;
+  --text-primary: #e8e8ec;
+  --text-secondary: #9a9aa5;
+  --text-tertiary: #6b6b76;
+  --accent: #7c8cff;
+  --accent-hover: #93a1ff;
+  --accent-muted: rgba(124, 140, 255, 0.14);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.32);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+}

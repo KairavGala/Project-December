@@ -1,0 +1,10 @@
+.route-fade-enter {
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+.route-fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
